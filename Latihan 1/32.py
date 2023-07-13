@@ -1,7 +1,7 @@
 liter = float(input('masukan total liter: '))
 harga_perliter = float(input('masukan harga per liter: '))
 tahu = float(input('masukan ukuran tahu: '))
-margin = 0.30
+margin = float(input('masukan jumlah presentase margin: '))
 total_tahu = liter * 1000 / tahu**3
 sisa_susu = total_tahu % 1 * tahu**3 * 0.001
 biaya_prod = liter * harga_perliter
