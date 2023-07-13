@@ -13,3 +13,15 @@ print('sisa susu kedelai: ', '{:.3f}'.format(sisa_susu))
 print('total biaya prod: ', biaya_prod)
 print('biaya prod per tahu: ', biaya_prod_pertahu)
 print('harga jual dengan margin 30%: ', harga_jual)
+y = 0
+z = 4
+while y < z:
+    penjualan_tahu = int(input('banyaknya tahu yang ingin di jual 60%: '))   
+    if penjualan_tahu >= 60:
+        break
+presentase_penjualan = penjualan_tahu / 100
+a = presentase_penjualan * total_tahu * biaya_prod_pertahu
+omset = presentase_penjualan * total_tahu * harga_jual
+keuntungan = omset - a
+print('total omset pak uu: ', omset)
+print('keuntungan pak uu: ', keuntungan)
