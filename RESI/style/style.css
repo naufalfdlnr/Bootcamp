@@ -1,0 +1,125 @@
+@font-face {
+    font-family: roboto;
+    src: url(font/Roboto-Regular.ttf);
+}
+
+.content {
+    width: 105mm;
+    height: 140mm;
+    border: 2px solid black;
+    font-family: roboto;
+
+}
+
+.head {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    align-items: center;
+    font-size: small;
+}
+
+.resi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.cuorier{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 15px;
+    font-size: small;
+    align-items: center;
+}
+
+.reg {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.kg {
+    padding-right: 15px;
+}
+
+.ongkir {
+    padding-right: 15px;
+}
+
+.pp {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+.pembayaran {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+    font-size: 10px;
+    border-bottom: 1px dashed black;
+}
+
+.ketpem {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 67px;
+    padding-left: 67px;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+
+.atention {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 9px;
+    padding-left: 9px;
+    border: 1px solid black;
+}
+
+.keterangan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+.prod {
+    width: 250px;
+}
+
+.sku {
+    width: 75px;
+    margin-left: 2px;
+}
+
+.varian {
+    width: 100px;
+}
+
+.jumlah {
+    width: 40px;
+
+}
+
+.footer{
+    padding: 5px;
+    align-items: center;
+    font-size: 10px;
+}
+
