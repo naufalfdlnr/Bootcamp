@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<link rel="stylesheet" href="../Login/asset/style/style.css">
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form class="login" id="login">
+                <span class="judul"><b>Login</b></span>
+                <div class="username"><b class="bintang">username</b>
+                    <div>
+                        <input type="text" id="username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="password"><b class="bintang">password</b>
+                    <div class="pass">
+                        <input  type="password" id="password" name="password" placeholder="Password" class="pass-input">
+                        <div id="error-message" style="color: red;"></div>
+                        <input type="checkbox" id="checkbox" style="cursor: pointer; margin-top: 10px; margin-right: 0;">
+                        <label for="checkbox" style="cursor: pointer;">Remember Me</label>
+                        <br>
+                        <label for="password">
+                            <div id="open"><button onclick="openn()"><img src="../Login/asset/img/red-eye 1.png" alt=""></button></div>
+                            <div id="hide"><button onclick="hidee()"><img src="../Login/asset/img/private 1.png" alt=""></button></div>
+                        </label>
+                        <br>
+                        <div class="button1"><button type="submit"><b>Login</b></button></a></div>
+                        <br>
+                        <div class="button1"><a href="register.html"><button><b>Register</b></button></a></div>
+                        <br>
+                        <div class="fp"><a href="fp.html">Forgot Password?</a></div>
+                    </div>          
+                </div>
+
+
+            </form>
+            <div class="img">
+                <div class="display"><img src="../Login/asset/img/Rectangle 3.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openn() {
+            var passwordInput = document.getElementById("password");
+            var open = document.getElementById("open");
+            open.style.visibility = 'hidden'
+            var hide = document.getElementById("hide");
+            hide.style.visibility = 'visible'
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+
+        function hidee() {
+            var passwordInput = document.getElementById("password");
+            var open = document.getElementById("open");
+            open.style.visibility = 'visible'
+            var hide = document.getElementById("hide");
+            hide.style.visibility = 'hidden'
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+
+        }
+
+        const usernamebox = document.getElementById('username');
+        const passbox = document.getElementById('password');
+        const login = document.getElementById('login');
+        const errorMessage = document.getElementById('error-message');
+        
+        login.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const username = login.username.value;
+            const password = login.password.value;
+            const usernameTersimpan = 'admin';
+            const passwordTersimpan = 'admin';
+            
+            if (username === usernameTersimpan && password === passwordTersimpan) {
+                window.location.href = 'home.html'
+            }
+            else {
+                if (username !== usernameTersimpan && password !== passwordTersimpan){
+                    errorMessage.textContent = 'Username and Password wrong.';
+                    usernamebox.style.border = '1px solid red'
+                    passbox.style.border = '1px solid red'
+                }
+                else if (username === usernameTersimpan && password !== passwordTersimpan){
+                    usernamebox.style.border = '1px solid #1053FF'
+                    passbox.style.border = '1px solid red'
+                    errorMessage.textContent = 'Password wrong.';
+                }
+                else if (password === passwordTersimpan && username !== usernameTersimpan){
+                    passbox.style.border = '1px solid #1053FF'
+                    usernamebox.style.border = '1px solid red'
+                    errorMessage.textContent = 'Username wrong.';
+                }       
+                
+            }
+        });
+
+
+    </script>
+
+</body>
+</html>

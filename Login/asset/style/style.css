@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    background: #EFEFEF;
+}
+
+@font-face {
+    font-family: inter ;
+    src: url(../font/static/InterTight-Light.ttf);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+}
+
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 340px;
+    width: 600px;
+    height: 352px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 53px;
+    width: 204px;
+    height: 267px;
+    flex-shrink: 0;
+    font-family: inter;
+}
+
+.username input{
+    padding-left: 15px;
+    width: 204px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #1053FF;
+    background: #FFF;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+span{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.img {
+    padding-right: 9px;
+}
+
+.display {
+    width: 280px;
+    height: 325px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.username {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.bintang::after {
+    content: '*';
+    color: red;
+}
+
+.password {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bintang b::after {
+    content: '*';
+    color: red;
+}
+
+.button1 button {
+    width: 204px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #FFF;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #7A9FFF 0%, #00AADF 100%);
+    border: none;
+    cursor: pointer;
+}
+
+.fp {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pass {
+    position: relative;
+    width: 204px;
+    height: 30px;
+}
+
+.pass-input {
+    padding-left: 15px;
+    border-radius: 20px;
+    border: 1px solid #1053FF;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    padding-right: 34px;
+    box-sizing: border-box;
+}
+
+#open {
+    visibility: visible;
+    position: absolute;
+    top:5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+#open button {
+    color: #FFF;
+    border-radius: 100%;
+    background: #FFF;
+    border: #FFF;
+    padding: 0;
+    cursor: pointer;
+}
+
+#hide {
+    visibility: hidden;
+    position: absolute;
+    top:5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+#hide button {
+    color: #FFF;
+    border-radius: 100%;
+    background: #FFF;
+    border: #FFF;
+    padding: 0;
+    cursor: pointer;
+}
