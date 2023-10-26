@@ -1,0 +1,74 @@
+@font-face {
+    font-family: robot;
+    src: url(/asset/font/Roboto-Regular.ttf)
+}
+
+.container {
+    font-family: robot;
+}
+.header {
+    top: 0%;
+    left: 0%;
+    font-size: 25px;
+    height: 8%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    z-index: 1000;
+}
+
+.header hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.main hr {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.photo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.email {
+    font-size: 13px;
+    opacity: 0.5;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+.name h1 {
+    font-size: 17px;
+}
+
+#image {
+    margin-left: 10px;
+}
+#text {
+    opacity: 0.7;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 10px;
+    padding-top: 12px;
+}
+#arrow {
+    right: 0;
+    position: absolute;
+    padding-top: 1%;
+    margin-right: 20px;
+}

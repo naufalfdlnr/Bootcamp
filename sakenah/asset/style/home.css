@@ -1,0 +1,388 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    z-index: 1000;
+    padding-bottom: 10px;
+}
+
+input {
+    border: 1px solid black;
+}
+
+.main {
+    margin-top: 10px;
+}
+
+.header1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header1 button {
+    text-align: center;
+}
+
+#search {
+    width: 95%;
+    padding-left: 40px;
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-search {
+    position: absolute;
+    top: 2.15%;
+    left: 5%;
+}
+
+.header2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header2 button {
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    border-radius: 300px;
+    padding: 13px;
+}
+
+.searchnfil{
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    width: 10%;
+}
+
+.offers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertise{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category button {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.category-prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.category1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.popular-category {
+    overflow: auto;
+    display: flex;
+}
+
+.popular-category::-webkit-scrollbar {
+    background: none;
+    display: none;
+}
+
+.popular-category button {
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-wrap: nowrap;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.love {
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 140px;
+    transition: 0.5s;
+}
+
+.name-prod{
+    padding-top: 5px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.item {
+    margin-right: 20px;
+}
+
+.title2 {
+    padding-bottom: 5px;
+}
+
+.title3{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.title3::-webkit-scrollbar {
+    background: none;
+    display: none;
+}
+ 
+
+/* SLIDESHOW IMAGE */
+
+.slider {
+  width: 370px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  background: none;
+  display: none;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 370px;
+  height: 190px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    margin-top: 5px;
+    max-width: 1000px;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.mySlides2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+  width: 20px;
+  border-radius: 5px;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* SIDE NAV */
+
+.background {
+    opacity: 0.5;
+    background-color: black;
+    z-index: 1;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+
+.sidenav {
+    height: 100%;
+    max-width: 1000px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-size: 20px;
+    padding-bottom: 20%;
+}
+
+.sidenav::-webkit-scrollbar {
+    display: none;
+    background: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(255, 123, 0), rgb(255, 174, 0));
+}
+
+.profile .closebtn {
+    position: absolute;
+    color: black;
+    top: 1%;
+    right: 5%;
+    font-size: 15px;
+}
+.main-nav {
+    background-color: white;
+    height: fit-content;
+    overflow: hidden;
+    padding-top: 5%;
+}
+
+.main-nav::-webkit-scrollbar {
+    background: none;
+}
+
+
+.logout {
+    position: fixed;
+    max-width: 1000px;
+    height: 10%;
+    bottom: 0;
+    z-index: 2;
+    background-color: lightgray;
+    align-items: center;
+    text-align: center;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.logout-button {
+    position: relative;
+    align-items: center;
+    top: 25px;
+}
+
+.man {
+    padding: 8px 8px 25px 10px;
+    color: #818181;
+}
+
+.man button{
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    color: #818181;
+}
+
+.man-container {
+  display: none;
+  background-color: white;
+  padding-left: 10px;
+}
+
+.man-container img {
+    border-radius: 20px;
+    margin-right: 25px;
+}

@@ -1,0 +1,134 @@
+* {
+    font-family: Robot;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+.container-order {
+    text-wrap: nowrap;
+    width: 100%;
+    position: absolute;
+    font-family: robot;
+    padding: 2% 0 0 0;
+}
+
+.header {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: sticky;
+    background-color: white;
+}
+
+.complete {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.pending {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-size: 20px;
+}
+
+.main {
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#highlighter1 {
+    height: 2px;
+    width: 50%;
+    left: 0;
+    background: #0f52ba;
+    position: absolute;
+    top: 37%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+#highlighter2 {
+    height: 2px;
+    width: 50%;
+    right: 0;
+    background: #0f52ba;
+    position: absolute;
+    top: 37%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    box-shadow: 0;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.chosen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.color {
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+    background-color: violet;
+    border-radius: 50%;
+}
+
+.status {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: lightgray;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.desc-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.to {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    padding: 5px;
+    margin-right: -40px;
+    color: white;
+}
+
+.to button {
+    color: white;
+}

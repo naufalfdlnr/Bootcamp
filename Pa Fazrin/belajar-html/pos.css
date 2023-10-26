@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+#sidebar {
+  width: 50px;
+  background: red;
+}
+
+#logo {
+  height: 50px;
+}
+
+#menu {
+  height: 200px;
+}
+
+#button {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#content {
+  flex-grow: 1;
+}
+
+#cart {
+  background: red;
+  width: 250px;
+}

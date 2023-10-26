@@ -1,0 +1,209 @@
+@font-face {
+    font-family: robot;
+    src: url(/asset/font/Roboto-Regular.ttf)
+}
+
+.container {
+    font-family: robot;
+}
+.header {
+    top: 0%;
+    left: 0%;
+    font-size: 25px;
+    height: 8%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    z-index: 1000;
+}
+.header span {
+    margin-left: 23%;
+}
+.header button {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    background-color: rgb(228, 228, 228);
+    border: solid white;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.blank {
+    height: 70px;
+}
+.method-list {
+    height: 75px;
+    margin-top: 14px;
+    border: 1px solid rgb(137, 137, 137);
+    border-radius: 10px;
+}
+.payment-razor img {
+    margin-top: 10px;
+}
+.payment-razor span {
+    position: absolute;
+    margin-top: 30px;
+    width: 250px;
+}
+.payment-razor input {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 250px;
+}
+
+.payment-payU img {
+    margin-left: 5px;
+    margin-top: 17px;
+}
+.payment-payU span {
+    position: absolute;
+    padding-left: 5px;
+    margin-top: 30px;
+    width: 250px;
+}
+.payment-payU input {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 255px;
+}
+
+.payment-instamojo img {
+    margin-left: 14px;
+    margin-top: 17px;
+}
+.payment-instamojo span {
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 30px;
+    width: 250px;
+}
+.payment-instamojo input {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 265px;
+}
+
+.payment-paypal img {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.payment-paypal span {
+    position: absolute;
+    padding-left: 10px;
+    margin-top: 27px;
+    width: 250px;
+}
+.payment-paypal input {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 250px;
+}
+
+.footer2{
+    margin-top: 125px;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    border-top: solid 0.5px gray;    z-index: 1000;
+}
+.checkout {
+    width: 97%;
+    height: 80%;
+    background-color: black;
+    margin: 5px;
+    border-radius: 10px;
+}
+.checkout span {
+    color: white;
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.popup-button1 {
+    width: 90%;
+    height: 40px;
+    background-color: black;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.popup-button1 span {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding-left: 95px;
+    padding-top: 0px;
+    display: flex;
+
+}
+.popup-button2 {
+    margin-left: 15px;
+    margin-bottom: 50px;
+    width: 90%;
+    height: 40px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 10px;
+}
+.popup-button2 span {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding-left: 85px;
+    padding-top: 0px;
+    display: flex;
+
+}
+.popup {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.popup-content {
+    margin-top: 70px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    border-radius: 10px;
+    border: white 10px;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.25);
+    opacity: 0;
+    transition: all .5s .1s;
+}
+.popup-image {
+    margin-left: 120px;
+    margin-top: 40px;
+}
+.popup-header h1{
+    font-size: 25px;
+    text-align: center;
+}
+.popup-header h2{
+    opacity: 0.5;
+    font-size: 15px;
+    text-align: center;
+}
+#popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup:target .popup-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    
+}

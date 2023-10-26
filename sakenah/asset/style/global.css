@@ -1,0 +1,67 @@
+@font-face {
+    font-family: robot ;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none}
+
+.container {
+    text-wrap: nowrap;
+    width: 100%;
+    position: absolute;
+    font-family: robot;
+    padding: 2% 2% 0 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    text-wrap: nowrap;
+    transition: ease;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+.footer{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    bottom: -1%;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border: solid rgb(126, 126, 126) 1px;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+#home {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+#content {
+    padding-top: 5px;
+}
+#account {
+    padding-top: 5px;
+    padding-right: 10px;
+}

@@ -1,0 +1,199 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search {
+    width: 95%;
+    padding-left: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.logo-search {
+    position: absolute;
+    top: 63px;
+    left: 15px;
+    opacity: 0.8;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header2 button {
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.searchnfil{
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    width: 10%;
+}
+
+.offers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertise{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgrey;
+}
+
+.category-prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.category1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.popular-category {
+    overflow: auto;
+    display: flex;
+}
+
+.popular-category button {
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-wrap: nowrap;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.item {
+    margin-right: 20px;
+}
+
+.title2 {
+    padding-bottom: 5px;
+}
+
+.title3{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+ 
+
+/* SLIDESHOW IMAGE */
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    margin-top: 5px;
+    max-width: 1000px;
+    position: relative;
+}
+
+.mySlides2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  top: 23px;
+  height: 190px;
+  padding: 16px;
+  margin-top: -22px;
+  color: transparent;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+  width: 20px;
+  border-radius: 5px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
